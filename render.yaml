@@ -3,7 +3,8 @@ services:
     name: instacart-customer-segmentation
     runtime: docker
     plan: free
-    autoDeploy: true
+    branch: main
+    autoDeployTrigger: commit
     healthCheckPath: /_stcore/health
     envVars:
       - key: STREAMLIT_SERVER_HEADLESS
