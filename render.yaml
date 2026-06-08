@@ -1,7 +1,8 @@
 services:
   - type: web
-    name: instacart-dashboard-streamlit
+    name: instacart-customer-segmentation
     runtime: docker
-    repo: https://github.com/Aarushi02-ab/Customer-Segmentation-using-instacart-dataset
-    branch: main
     plan: free
+    branch: main
+    autoDeployTrigger: commit
+    healthCheckPath: /_stcore/health
