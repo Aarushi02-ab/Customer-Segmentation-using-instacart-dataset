@@ -1,0 +1,11 @@
+.git
+.gitignore
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+data/*.csv
+*.parquet
+*.pkl
+.streamlit/secrets.toml
